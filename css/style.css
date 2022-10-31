@@ -66,3 +66,76 @@ display: block;
 .menu-barr{
     font-size:38px;
 }
+
+.text-aling-center{
+    text-align: center;
+}
+
+.text-aling{
+    text-align: center;
+    
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+}
+
+.card{
+    border: 1px solid #c6c6c6;
+    width: 352px;
+    margin: 5%;
+    height: 390px;
+}
+
+
+main li{
+    text-align: center;
+}
+
+/* main li a:hover{
+    color: green;
+    text-decoration: none;
+} */
+
+main li a:link, a:visited{
+    font-size: 23px;
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+    text-align: justify;
+}
+
+main li p {
+    font-size: 17px;
+    color: black;
+
+
+}
+
+.bemvindo{
+    padding: 100px;
+    font-size: 50px;
+}
+
+.img1{
+    width: 100%;
+}
+
+.descricao-produto{
+    padding-bottom: 1px;
+}
+
+
+h2{
+   
+}
+
+.addCar{
+    position: relative;
+    top: 110px;
+    padding: 20px;
+    font-size: 25px;
+    background-color: salmon;
+}
