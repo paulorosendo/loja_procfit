@@ -1,0 +1,68 @@
+header{
+    background: linear-gradient(to right, yellow 3% , red);
+    
+}
+
+ #container-nav {
+    display: grid;
+    height: 39px;
+    grid-template-columns: 72px 201px 200px 50px;
+
+} 
+
+#navbar{
+    position: absolute;
+    left: 3px;
+    top: 10%;
+
+
+}
+
+.burger-shower {
+    display: none;
+  }
+  
+.burger-shower:checked ~ .burger-menu {
+display: block;
+}
+  
+.hamburger {
+    display:block;
+    width: 3.4em;
+    height: 2.4em;
+    line-height: .1em;
+    padding: 0 .4em .4em;
+ }
+  
+  
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 49px;
+    border: 1px solid;
+    padding: 50px 100px;
+    color: white;
+    background-color: #c6c6c6;
+    
+}
+
+.burger-menu li{
+    display: inline;
+    margin: 0 5px ;
+    font-size: 20px;
+}
+
+#img-logo{
+    width: 195px; 
+}
+
+.txt-logo{
+    color: red;
+    font-size: 46px;
+    margin-top: auto;
+}
+
+.menu-barr{
+    font-size:38px;
+}
