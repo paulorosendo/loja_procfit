@@ -86,7 +86,6 @@ display: block;
 .card{
     border: 1px solid #c6c6c6;
     width: 352px;
-    margin: 5%;
     height: 390px;
 }
 
@@ -127,15 +126,18 @@ main li p {
     padding-bottom: 1px;
 }
 
-
-h2{
-   
+.descricao_produto{
+    height: 163px;
 }
 
-.addCar{
-    position: relative;
-    top: 110px;
-    padding: 20px;
-    font-size: 25px;
-    background-color: salmon;
+
+/* li .card h2 {
+    font-size: 400px;
+    background-color: yellow;
+} */
+
+
+.carrinho{
+    display:flex;
+
 }

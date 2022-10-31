@@ -60,11 +60,14 @@ mostra(`
                 <li class="produtos">
                     <div class="card">
                         <img class="img1" src="img/Caderno.jpg"/>
-                        <p>Cadeno/Agenda Procfit com 100 folhas, formato capa dura, esperial</p>
-                        <h3 class="preco-produto">R$25,00</h3>
-                        <div class="addCar">
-                            <h2>Adicionar o ao carrinho </h2>
+                        <div class="descricao_produto">
+                            <p>Cadeno/Agenda Procfit com 100 folhas, formato capa dura, esperial</p>
+                            <h3 class="preco-produto">R$25,00</h3>
+                        </div
+                        <div class="carrinho">
+                            <p>Adicionar o ao carrinho </p>
                         </div>
+                        
                     </div>
                 </li>
                 
