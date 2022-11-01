@@ -1,0 +1,95 @@
+header{
+    background: linear-gradient(to right, yellow 3% , red);
+    
+}
+
+#img-logo{
+    width: 195px; 
+    padding: 0 20px;
+}
+
+#container-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 25px;
+}
+
+.txt-logo{
+    color: red;
+    font-size: 45px;
+}
+
+.menu-barr{
+    font-size:38px;
+}
+
+.burger-shower {
+    display: none;
+}
+
+.burger-shower:checked ~ .burger-menu {
+    display: flex;
+    }
+
+.hamburger {
+    display:block;
+    width: 3.4em;
+    height: 2.4em;
+    line-height: .1em;
+    padding: 0 .4em .4em;
+    }
+
+
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid;
+    padding: 50px 100px;
+    color: white;
+    background-color: black;
+    /* display: flex; */
+}
+
+
+.burger-menu li{
+    padding: 0 10px;
+}
+
+.carrinho{
+    font-size:38px;
+    right: 0;
+}
+
+
+.conteudo-esquerda{
+    width: auto;
+    display: flex;
+
+}
+.conteudo-direita{
+    justify-content:right;
+    width: 100%;
+    display: flex;
+
+}
+
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.card{
+    border: 1px solid #c6c6c6;
+    width: 352px;
+    height: 390px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.img1{
+    width: 100%;
+}
