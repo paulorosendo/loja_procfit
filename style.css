@@ -1,95 +1,152 @@
-header{
-    background: linear-gradient(to right, yellow 3% , red);
-    
+@font-face {
+  font-family: "santana";
+  src: url("font/Santana.otf") format(opentype);
+  font-weight: normal;
+  font-style: normal;
 }
 
-#img-logo{
-    width: 195px; 
-    padding: 0 20px;
+@font-face {
+  font-family: "minhafonte";
+  src: url("font/Philosopher-Regular.ttf") format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "minhafonte";
+}
+
+body {
+  background-color: #dedede;
+}
+
+header {
+  background: linear-gradient(to right, yellow, red);
+}
+
+#img-logo {
+  width: 195px;
 }
 
 #container-nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
-.txt-logo{
-    color: red;
-    font-size: 45px;
+.txt-logo {
+  color: red;
+  font-size: 45px;
+  font-family: "santana";
 }
 
-.menu-barr{
-    font-size:38px;
+.menu-barr {
+  font-size: 38px;
 }
 
 .burger-shower {
-    display: none;
+  display: none;
 }
 
 .burger-shower:checked ~ .burger-menu {
-    display: flex;
-    }
+  display: flex;
+}
 
 .hamburger {
-    display:block;
-    width: 3.4em;
-    height: 2.4em;
-    line-height: .1em;
-    padding: 0 .4em .4em;
-    }
-
+  display: block;
+  width: 3.4em;
+  height: 2.4em;
+  line-height: 0.1em;
+  padding: 0 0.4em 0.4em;
+}
 
 .burger-menu {
-    display: none;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    border: 1px solid;
-    padding: 50px 100px;
-    color: white;
-    background-color: black;
-    /* display: flex; */
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  border: 1px solid;
+  padding: 50px 100px;
+  color: red;
+  background-color: white;
+  /* display: flex; */
 }
 
-
-.burger-menu li{
-    padding: 0 10px;
+.burger-menu li {
+  padding: 0 10px;
 }
 
-.carrinho{
-    font-size:38px;
-    right: 0;
+.carrinho {
+  font-size: 45px;
+  right: 0;
 }
 
-
-.conteudo-esquerda{
-    width: auto;
-    display: flex;
-
+.conteudo-esquerda {
+  width: auto;
+  display: flex;
 }
-.conteudo-direita{
-    justify-content:right;
-    width: 100%;
-    display: flex;
-
+.conteudo-direita {
+  justify-content: right;
+  width: 100%;
+  display: flex;
 }
 
-
-#container{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10%;
+.conteudo-direita h2 {
+  font-size: 50px;
 }
 
-.card{
-    border: 1px solid #c6c6c6;
-    width: 352px;
-    height: 390px;
-    display: inline-block;
-    margin: 20px;
+main .bemvindo {
+  text-align: center;
+  margin: 85px;
+  font-size: 40px;
 }
 
-.img1{
-    width: 100%;
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #c6c6c6;
+  width: 300px;
+  height: auto;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 10px;
+  background-color: white;
+}
+
+.card:hover {
+  position: relative;
+  bottom: 10px;
+}
+
+.img1 {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.descricao-card {
+  text-align: center;
+  margin: 10px;
+}
+
+.preco-card:hover {
+  bottom: 0;
+}
+
+.addCar {
+  font-size: 25px;
+  text-align: center;
+  border-radius: 20px;
 }
