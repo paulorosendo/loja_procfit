@@ -82,20 +82,7 @@ var links = document.getElementsByClassName("carrin");
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function () {
     let key = this.getAttribute("key");
-    var intenTransformado = itens[key].quantidade++;
-
+    itens[key].quantidade++;
     atualizarCarrinho();
-    return false;
   });
-}
-
-function setCookie(intenTransformado) {
-  let expires = "";
-  if (days != 0) {
-    let age = days * 24 * 60 * 60; // tempo em segundos
-    expires = `Max-Age = ${age};`;
-  } else {
-    expires = "";
-  }
-  document.cookie = `${cname} = ${cvalue}; ${expires}; Path=/`;
 }
