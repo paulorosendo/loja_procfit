@@ -1,13 +1,13 @@
 @font-face {
   font-family: "santana";
-  src: url("font/Santana.otf") format(opentype);
+  src: url("../font/Santana.otf") format(opentype);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "minhafonte";
-  src: url("font/Philosopher-Regular.ttf") format(truetype);
+  src: url("../font/Philosopher-Regular.ttf") format(truetype);
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, yellow, red);
+  background: whitesmoke;
 }
 
 #img-logo {
@@ -31,7 +31,6 @@ header {
 #container-nav {
   display: flex;
   flex-wrap: nowrap;
-  background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -72,7 +71,10 @@ header {
   padding: 50px 100px;
   color: red;
   background-color: white;
-  /* display: flex; */
+}
+
+.burger-menu li img {
+  width: 200px;
 }
 
 .burger-menu li {
@@ -111,21 +113,31 @@ main .bemvindo {
 }
 
 .card {
-  border: 1px solid #c6c6c6;
   width: 300px;
-  height: auto;
+  height: 369px;
   display: inline-block;
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px #00000055;
+  box-shadow: 0 0 10px #00000055;
   background-color: white;
 }
 
 .card:hover {
-  position: relative;
-  bottom: 10px;
+  height: 400px;
+  margin-top: -16px;
 }
 
+.display-none {
+  display: none;
+}
+
+.card:hover > .display-none {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
 .img1 {
   width: 100%;
   height: 300px;
@@ -139,6 +151,7 @@ main .bemvindo {
 .descricao-card {
   text-align: center;
   margin: 10px;
+  font-size: 22px;
 }
 
 .preco-card:hover {
@@ -149,4 +162,34 @@ main .bemvindo {
   font-size: 25px;
   text-align: center;
   border-radius: 20px;
+}
+
+.preco-card {
+  text-align: center;
+}
+
+.modal1 {
+  display: none;
+
+  position: fixed;
+
+  width: 90%;
+
+  height: 90%;
+
+  top: 50%;
+
+  left: 50%;
+
+  margin-right: -50%;
+
+  transform: translate(-50%, -50%);
+
+  background: gainsboro;
+
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0 0 10px #0000009f;
+
+  box-shadow: 0 0 10px #0000009f;
 }
