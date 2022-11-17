@@ -1,3 +1,7 @@
-footer .container {
-  background-color: #c6c6c6;
+.container-footer {
+  background-color: white;
+   margin-top: 100px;
+   padding: 50px;
+   display: flex;
+   justify-content: center;
 }

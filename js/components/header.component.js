@@ -1,6 +1,6 @@
-mostraHeader(
-  `<div class="branco">
-    <div id="container-nav">
+function mostraHeader (){
+  return `<div class="branco">
+    <header id="container-nav">
         <div class="conteudo-esquerda">
           <input type="checkbox" id="burger-shower" class="burger-shower" />
           <label for="burger-shower" class="hamburger">
@@ -25,6 +25,8 @@ mostraHeader(
           </a>
         </div>
       </div>
-    </div>
+    </header>
     `
-);
+}
+
+export default mostraHeader

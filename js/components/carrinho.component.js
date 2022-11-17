@@ -1,3 +1,14 @@
+
+function atualizarCarrinho (){
+
+ 
+  return 
+}
+
+
+export default atualizarCarrinho
+
+/*
 atualizarCarrinho = () => {
   var containerCarrinho = document.getElementById("carrinho");
   containerCarrinho.innerHTML = "";
@@ -21,3 +32,6 @@ for (var i = 0; i < links.length; i++) {
     atualizarCarrinho();
   });
 }
+
+
+*/

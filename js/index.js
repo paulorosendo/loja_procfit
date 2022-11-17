@@ -1,50 +1,11 @@
-mostraHeader = (frase) => {
-  var txt = frase;
-  document.getElementById("header").innerHTML += txt;
-};
+import mostraHeader from "./components/header.component.js"
+import mostraMain from "./components/main.component.js"
+import mostraFooter from "./components/footer.component.js"
 
-mostraMain = (frase) => {
-  var txt = frase;
-  document.getElementById("conteudo-main").innerHTML += txt;
-};
+let root = document.querySelector("#root")
 
-mostraFooter = (frase) => {
-  var txt = frase;
-  document.getElementById("conteudo-footer").innerHTML += txt;
-};
-
-const itens = [
-  {
-    id: 0,
-    nome: "Caderno",
-    img: "Caderno.jpg",
-    categoria: 1,
-    preco: 15,
-    quantidade: 0,
-  },
-  {
-    id: 1,
-    nome: "Camisa Seja Diferente",
-    img: "Camisa Seja Diferente.jpg",
-    preco: 25,
-    categoria: 1,
-    quantidade: 0,
-  },
-  {
-    id: 2,
-    nome: "Camisa SoftFácil",
-    img: "Camisa SoftFácil.jpg",
-    preco: 25,
-    categoria: 1,
-    quantidade: 0,
-  },
-
-  {
-    id: 3,
-    nome: "Camisa SQL",
-    img: "Camisa SQL.jpg",
-    preco: 25,
-    categoria: 1,
-    quantidade: 0,
-  },
-];
+root.innerHTML = `
+                  ${mostraHeader()}
+                  ${mostraMain()}
+                  ${mostraFooter()}
+                  `

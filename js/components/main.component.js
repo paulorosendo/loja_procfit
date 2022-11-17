@@ -1,13 +1,14 @@
-mostraMain(
-  `
-     <div class="text-aling-center">
-          <h1 class="bemvindo">Bem vindo(a), ProcStore!</h1>
-        </div>
+import Listagem from "./listagem.component.js"
+import Carrinho from "./carrinho.component.js"
 
-        <h2>carrinho</h2>
-        <div id="carrinho"></div>
-        <div id="container">
-          <!-- function gerador de card's  -->
+function mostraMain () {
+  return `
+     <div class="text-aling-center">
+        <h1 class="bemvindo">Bem vindo(a), ProcStore!</h1>
+        <div id="carrinho">${Carrinho()}</div>
+        <div id="container">${Listagem()}</div>
     </div>
     `
-);
+}
+
+export default mostraMain

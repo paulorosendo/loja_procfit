@@ -19,9 +19,10 @@
 body {
   background-color: #dedede;
 }
-
+/* header */
 header {
   background: white;
+  height: 1000px;
 }
 
 #img-logo {
@@ -32,6 +33,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   height: 100%;
+  padding: 5px 0 5px 0;
 }
 
 .txt-logo {
@@ -98,8 +100,11 @@ header {
   font-size: 50px;
 }
 
-main .bemvindo {
-  text-align: center;
+
+/* fim do header */
+
+
+.bemvindo {
   margin: 85px;
   font-size: 40px;
 }
@@ -110,85 +115,93 @@ main .bemvindo {
   justify-content: center;
 }
 
-.card {
-  margin: 0 10px 20px 10px;
-  width: 300px;
-  height: 369px;
-  display: inline-block;
-  margin: 20px;
-  border-radius: 10px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 10px #00000055;
-  box-shadow: 0 0 10px #00000055;
-  background-color: white;
+.card img{
+  width:  300px;
+  height: 260px;
+
+}
+.item-card-imagem{
+  width:  300px;
+  height: 300px;
+  margin-bottom: 10px;
+
+  
 }
 
-.card:hover {
-  height: 400px;
-  margin-top: -16px;
-}
-
-.display-none {
-  display: none;
-}
-
-.card:hover > .display-none {
+.menu-hide{
   display: flex;
   justify-content: center;
-  font-size: 25px;
 }
-.img1 {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
+.favoritos{
+  display: flex;
 }
 
-.card a {
-  text-decoration: none;
-  color: black;
+.favoritos p{
+  font-size: 15px;
+  margin: 0 20px;  
+  
 }
-.descricao-card {
+
+.coracao:hover{
+  color: red;
+}
+
+.addFav, .addEspiar{
   text-align: center;
-  margin: 10px;
-  font-size: 22px;
+  color: #00000059;
 }
 
-.preco-card:hover {
-  bottom: 0;
+.addEspiar:hover{
+  color: #e8ff1dda;
 }
 
-.addCar {
-  font-size: 25px;
+.produto_nome{
+  font-weight: bold;
+
+}
+
+.text-center-des{
   text-align: center;
-  border-radius: 20px;
+  margin-top: 5px;
 }
 
-.preco-card {
+.text-end-des{
+  text-align:center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+
+
+
+.card{
+  width:  300px;
+  height: 382px;
+  margin: 0 10px;
+  background-color: aliceblue;
+  margin: 0 10px 20px 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px #00000055;
+  box-shadow:  0 0 10px #00000055;
+}
+
+.bemvindo{
   text-align: center;
 }
 
 .modal1 {
   display: none;
-
   position: fixed;
-
   width: 90%;
-
   height: 90%;
-
   top: 50%;
-
   left: 50%;
-
   margin-right: -50%;
-
   transform: translate(-50%, -50%);
-
   background: gainsboro;
-
   border-radius: 10px;
-
   -webkit-box-shadow: 0 0 10px #0000009f;
-
   box-shadow: 0 0 10px #0000009f;
 }
+
+/* fim do main */
