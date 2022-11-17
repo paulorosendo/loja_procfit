@@ -13,9 +13,12 @@
             </div>
 
              <div class="addCar">
-    <a key="${val.id}" class="carrin" href="#">Adcionar ao carrinho</p>
-       </div>
+                <a key="${val.id}" class="carrin" href="#">Adcionar ao carrinho</p>
+             </div>
 
+             <div class="modal">
+                modal
+             <div>
         </div>  
       `;
   });

@@ -1,12 +1,17 @@
-function mostraHeader(frase) {
+mostraHeader = (frase) => {
   var txt = frase;
   document.getElementById("header").innerHTML += txt;
-}
+};
 
-function mostraMain(frase) {
+mostraMain = (frase) => {
   var txt = frase;
   document.getElementById("conteudo-main").innerHTML += txt;
-}
+};
+
+mostraFooter = (frase) => {
+  var txt = frase;
+  document.getElementById("conteudo-footer").innerHTML += txt;
+};
 
 const itens = [
   {
