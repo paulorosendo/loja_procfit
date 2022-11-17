@@ -11,44 +11,12 @@
   </head>
 
   <body>
-    <header id="container-nav">
-      <div class="conteudo-esquerda">
-        <input type="checkbox" id="burger-shower" class="burger-shower" />
-        <label for="burger-shower" class="hamburger">
-          <i class="fa-solid fa-bars menu-barr"></i>
-        </label>
-
-        <ul class="burger-menu">
-          <li><img src="img/LOGO-COSMOS-PRO-2019.png" alt="" /></li>
-          <li>SOFTFACIL</li>
-          <li>PROCFIT PRDUTOS</li>
-        </ul>
-
-        <img id="img-logo" src="img/logo-proc.png" />
-
-        <p class="txt-logo">Store</p>
-      </div>
-
-      <div class="conteudo-direita">
-        <div id="inserirpreco"></div>
-        <a href="carrinho.html">
-          <i class="fa-solid fa-cart-shopping carrinho"></i>
-        </a>
-      </div>
+    <header>
+      <div id="header"></div>
     </header>
 
     <main>
-      <div>
-        <div class="text-aling-center">
-          <h1 class="bemvindo">Bem vindo(a), ProcStore!</h1>
-        </div>
-
-        <h2>carrinho</h2>
-        <div id="carrinho"></div>
-        <div id="container">
-          <!-- function gerador de card's  -->
-        </div>
-      </div>
+      <div id="conteudo-main"></div>
     </main>
 
     <footer>
@@ -68,6 +36,26 @@
     </footer>
 
     <script type="text/javascript" src="js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="js/components/header.component.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="js/components/main.component.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="js/components/listagem.component.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="js/components/carrinho.component.js"
+    ></script>
+
     <script
       src="https://kit.fontawesome.com/7e9c90a861.js"
       crossorigin="anonymous"

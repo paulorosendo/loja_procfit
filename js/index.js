@@ -1,6 +1,11 @@
-function mostra(frase) {
+function mostraHeader(frase) {
   var txt = frase;
-  document.querySelector("#root").innerHTML = frase;
+  document.getElementById("header").innerHTML += txt;
+}
+
+function mostraMain(frase) {
+  var txt = frase;
+  document.getElementById("conteudo-main").innerHTML += txt;
 }
 
 const itens = [
@@ -38,51 +43,3 @@ const itens = [
     quantidade: 0,
   },
 ];
-
-inicilizarLoja = () => {
-  var containerProdutos = document.getElementById("container");
-  itens.map((val) => {
-    containerProdutos.innerHTML += `
-        <div class="card">
-            <img class="img1" src="img/${val.img}" />
-            <div class="descricao-card">
-                <p>R$${val.preco}</p>
-            </div>
-
-            <div class="display-none">
-              <h2>${val.nome}</h2>
-            </div>
-
-             <div class="addCar">
-    <a key="${val.id}" class="carrin" href="#">Adcionar ao carrinho</p>
-       </div>
-
-        </div>  
-      `;
-  });
-};
-inicilizarLoja();
-
-atualizarCarrinho = () => {
-  var containerCarrinho = document.getElementById("carrinho");
-  containerCarrinho.innerHTML = "";
-  itens.map((val) => {
-    if (val.quantidade > 0) {
-      containerCarrinho.innerHTML += `
-                <p class="carrinho-pad">${val.nome} | quantidade: ${val.quantidade} <p/>
-                <hr>
-            
-        `;
-    }
-  });
-};
-
-var links = document.getElementsByClassName("carrin");
-
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function () {
-    let key = this.getAttribute("key");
-    itens[key].quantidade++;
-    atualizarCarrinho();
-  });
-}
