@@ -1,4 +1,4 @@
-function mostraHeader (){
+function mostraHeader() {
   return `<div class="branco">
     <header id="container-nav">
         <div class="conteudo-esquerda">
@@ -8,7 +8,7 @@ function mostraHeader (){
           </label>
 
           <ul class="burger-menu">
-            <li><img src="img/LOGO-COSMOS-PRO-2019.png" alt="" /></li>
+            <li>COSMOS</li>
             <li>SOFTFACIL</li>
             <li>PROCFIT PRDUTOS</li>
           </ul>
@@ -20,13 +20,13 @@ function mostraHeader (){
 
         <div class="conteudo-direita">
           <div id="inserirpreco"></div>
-          <a href="carrinho.html">
+
             <i class="fa-solid fa-cart-shopping carrinho"></i>
-          </a>
+
         </div>
       </div>
     </header>
-    `
+    `;
 }
 
-export default mostraHeader
+export default mostraHeader;

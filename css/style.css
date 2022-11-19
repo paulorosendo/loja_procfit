@@ -100,9 +100,7 @@ header {
   font-size: 50px;
 }
 
-
 /* fim do header */
-
 
 .bemvindo {
   margin: 85px;
@@ -115,77 +113,70 @@ header {
   justify-content: center;
 }
 
-.card img{
-  width:  300px;
+.card img {
+  width: 300px;
   height: 260px;
-
 }
-.item-card-imagem{
-  width:  300px;
+.item-card-imagem {
+  width: 300px;
   height: 300px;
   margin-bottom: 10px;
-
-  
 }
 
-.menu-hide{
+.menu-hide {
   display: flex;
   justify-content: center;
 }
-.favoritos{
+.favoritos {
   display: flex;
 }
 
-.favoritos p{
+.favoritos p {
   font-size: 15px;
-  margin: 0 20px;  
-  
+  margin: 0 20px;
 }
 
-.coracao:hover{
+.coracao:hover {
   color: red;
 }
 
-.addFav, .addEspiar{
+.addFav,
+.addEspiar {
   text-align: center;
   color: #00000059;
 }
 
-.addEspiar:hover{
+.addEspiar:hover {
   color: #e8ff1dda;
 }
 
-.produto_nome{
+.produto_nome {
   font-weight: bold;
-
 }
 
-.text-center-des{
+.text-center-des {
   text-align: center;
   margin-top: 5px;
 }
 
-.text-end-des{
-  text-align:center;
+.text-end-des {
+  text-align: center;
   font-size: 25px;
   margin-top: 10px;
 }
 
-
-
-
-.card{
-  width:  300px;
+.card {
+  width: 300px;
   height: 382px;
   margin: 0 10px;
-  background-color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.246);
   margin: 0 10px 20px 10px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 10px #00000055;
-  box-shadow:  0 0 10px #00000055;
+  box-shadow: 0 0 10px #00000055;
 }
 
-.bemvindo{
+.bemvindo {
   text-align: center;
 }
 
@@ -198,7 +189,7 @@ header {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  background: gainsboro;
+  background-color: #0000009f;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px #0000009f;
   box-shadow: 0 0 10px #0000009f;

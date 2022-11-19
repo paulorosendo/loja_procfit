@@ -1,37 +1,31 @@
+import itens from "../../itens.json" assert { type: "json" };
 
-function atualizarCarrinho (){
-
- 
-  return 
-}
-
-
-export default atualizarCarrinho
-
-/*
-atualizarCarrinho = () => {
-  var containerCarrinho = document.getElementById("carrinho");
-  containerCarrinho.innerHTML = "";
+const atualizarCarrinho = (val) => {
+  let resulCarrinho = ``;
   itens.map((val) => {
     if (val.quantidade > 0) {
-      containerCarrinho.innerHTML += `
-                <p class="carrinho-pad">${val.nome} | quantidade: ${val.quantidade} <p/>
-                <hr>
-            
-        `;
+      resulCarrinho += `
+           <p class="carrinho-pad">${val.nome} | quantidade: ${val.quantidade} <p/>
+            <hr>
+      `;
     }
   });
+  return resulCarrinho;
 };
 
-var links = document.getElementsByClassName("carrin");
+var links = Array.from(document.getElementsByClassName(`link`));
+console.log(links.length);
 
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function () {
-    let key = this.getAttribute("key");
-    itens[key].quantidade++;
-    atualizarCarrinho();
-  });
+var links = document.getElementsByClassName("carrin");
+if (links.length > 0) {
+  console.log(links);
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
+      let key = this.getAttribute("key");
+      itens[key].quantidade++;
+      atualizarCarrinho();
+    });
+  }
 }
 
-
-*/
+export default atualizarCarrinho;

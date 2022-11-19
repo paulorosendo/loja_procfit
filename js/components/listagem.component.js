@@ -1,9 +1,11 @@
-import itens from '../../itens.json' assert {type: 'json'}
+import itens from "../../itens.json" assert { type: "json" };
 
-function inicilizarLoja () {
-  return itens.map((val) => {
-            return`
-                    <ul class="card">
+const listagemCards = (val) => {
+  let result = ``;
+  itens.map(
+    (val) =>
+      (result += `
+                      <ul class="card">
                         <li class="item-card-imagem">
                           <img class="imagem-produto" src="img/${val.img}"  />
                           <div class="menu-hide">
@@ -19,22 +21,15 @@ function inicilizarLoja () {
                             </div>
                           </div>
                         </li>
-
                         <li>
                           <h1 class="produto_nome">${val.nome}</h1>
                             <p class="text-center-des">${val.descricao}</p>
-                            <p class="text-end-des">R$${val.preco}</p>
+                            <P key="${val.id}" class="text-center-des preco" href="#">R$${val.preco},99</p>
                         </li>
                     </ul>  
-                  `
-          })
-}
+                  `)
+  );
+  return result;
+};
 
-export default inicilizarLoja
-
-                        // <li class="item-card">
-                        //   <p class="list-item">R$${val.preco}</p>
-                        // </li>
-                        // <li class="item-card">
-                        //   <a key="${val.id}" class="carrin" href="#" >${val.nome} <a/>
-                        // </li>
+export default listagemCards;
