@@ -20,7 +20,7 @@ function mostraHeader() {
 
         <div class="conteudo-direita">
           <div id="inserirpreco"></div>
-
+            <div id="numero"></div>
             <i class="fa-solid fa-cart-shopping carrinho"></i>
 
         </div>

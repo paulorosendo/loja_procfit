@@ -22,9 +22,11 @@ const listagemCards = (val) => {
                           </div>
                         </li>
                         <li>
-                          <h1 class="produto_nome">${val.nome}</h1>
+                          <div class="conteudo-card>
+                            <h1 class="produto_nome">${val.nome}</h1>
                             <p class="text-center-des">${val.descricao}</p>
-                            <P key="${val.id}" class="text-center-des preco" href="#">R$${val.preco},99</p>
+                            <a key="${val.id}" class="text-center-des preco carrin" href="#">R$${val.preco},99</a>
+                          </div>
                         </li>
                     </ul>  
                   `)
