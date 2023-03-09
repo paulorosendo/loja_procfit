@@ -1,11 +1,11 @@
-import mostraHeader from "./components/header.component.js";
-import mostraMain from "./components/main.component.js";
+import mostraInicio from "./components/home.component.js";
+import mostraListagem from "./components/listagem.component.js";
 import mostraFooter from "./components/footer.component.js";
 
 let root = document.querySelector("#root");
 
-root.innerHTML = `
-                  ${mostraHeader()}
-                  ${mostraMain()}
-                  ${mostraFooter()}
+root.innerHTML += `
+  ${mostraInicio()}
+  ${mostraListagem()}
+  ${mostraFooter()}
                   `;
